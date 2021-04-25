@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <STYLE>
+            label {width:10em; display: inline-block;}
+            input#date {width: 5em;}
+            #error { color:red; }
+            .box {height:100px; width:500px  }
+            img { display:block; max-height:100%; max-width:100%; }
+        </STYLE>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <h2>NASA Images</h2>
+        <div>
+            <label for="date">Enter a Date:</label>
+            <input type="text" id="date" placeholder="11/11/2020">
+            <input type="button" id="submit_date" value="Submit Date"> 
+            <input type="button" id="yesterday" value = "Yesterday">
+        </div>
+        <div class="box" id="box">
+            
+            <img src="" id="nasa_picture">
+            <span id="error"></span>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+        <script src="nasa.js"></script>
+    </body>
+</html>
